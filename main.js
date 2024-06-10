@@ -321,7 +321,7 @@ function emptyCart() {
 
 function resturantsList () {
   //used to remove error when javascript try construct this componentes in pages doens't use this
-  if (page == '/home/') {
+  if (page == '/') {
     Array.from({length: 3}).map((_) => {
       let newItem = document.createElement('li')
       newItem.classList.add('restaurantSectionItem')
