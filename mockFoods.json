@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Steak W/ salad",
+    "price": 20,
+    "image": "steak.png"
+  },
+  {
+    "id": 2,
+    "name": "Meat W/ Fries and salad",
+    "price": 30,
+    "image": "meatfriessalad.png"
+  },
+  {
+    "id": 3,
+    "name": "Salad plate",
+    "price": 10,
+    "image": "salad.png"
+  },
+  {
+    "id": 4,
+    "name": "Meat W/ Gabbi and Khalil",
+    "price": 25,
+    "image": "meatGabbi.png"
+  },
+  {
+    "id": 5,
+    "name": "Tasty grilled chicken",
+    "price": 25,
+    "image": "grilledChicken.png"
+  },
+  {
+    "id": 6,
+    "name": "Fried rice W/ Vegetables",
+    "price": 20,
+    "image": "friedRice.png"
+  }  
+]

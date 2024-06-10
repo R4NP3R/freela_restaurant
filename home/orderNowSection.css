@@ -1,0 +1,115 @@
+.mainFoodBg {
+  background-color: #151515;
+}
+
+.orderNowSectionHeader {
+  display: flex;
+}
+
+.orderNowSectionList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 120px;
+  margin-top: 60px;
+
+  @media (max-width: 480px) {
+    margin-top: 80px;
+  }
+}
+
+.orderNowSectionItem {
+  position: relative;
+  width: 320px;
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+.foodImage {
+    width: 120px;
+    position: absolute;
+    top: -25px;
+    left: -50px;
+
+
+    @media (max-width: 480px) {
+      top: -60px;
+      left: 35%;
+    }
+}
+
+.orderNowSectionItemDetails {
+  background: linear-gradient(180deg, #101010 30%, #202020 100%);
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0px;  
+  padding-left: 80px;
+  padding-right: 20px;
+
+  @media (max-width: 480px) {
+    padding: 24px;
+    padding-top: 80px;
+  }
+}
+
+.mainFoodName {
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+}
+
+.orderNowSectionItemValue{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+
+  span {
+    color: #E71900;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
+
+.orderNowSectionItemQuality{  
+  i {
+    color: yellow;
+    width: 8px;
+    margin-right: 6px;
+  }
+}
+
+.orderNowButton {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration:underline;
+  }
+}
+
+.buyButton {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  background-color: #191919;
+  border: none;
+  width: 48px;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  
+
+  img {
+    width: 100%;
+    transition: 0.3s ease-in;
+
+    &:hover {
+      scale: 1.06;
+    }
+  }
+}

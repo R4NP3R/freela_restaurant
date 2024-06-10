@@ -1,0 +1,84 @@
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+
+.bg_parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+
+  @media (max-width: 480px) {
+    text-align: center;
+  }
+}
+
+.restaurantBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transform: translateZ(-10px) scale(2);
+}
+
+.welcomeMessage {
+  font-size: 42px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.sectionsBg {
+  background: linear-gradient(345deg, rgba(16,16,16,1) 50%, rgb(59, 14, 11) 100%);
+}
+
+
+.restaurantApresentation {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 420px;
+    border-radius: 100%;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column-reverse;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.mainCourseImage {
+  width: 420px;
+  border-radius: 100%;
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.restaurantApresentationText {
+  width: 820px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: 200;
+  
+  p {
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+

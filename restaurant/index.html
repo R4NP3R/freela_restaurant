@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/logo.png" />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="/home/orderNowSection.css">
+    <link rel="stylesheet" href="restaurantApresentation.css" />
+    <title>Food Now - Butchery Meat Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerSeparator container">
+        <div class="siteBrand">
+          <img src="/assets/logo.png" alt="" />
+          <a  href="/home">
+            <h1>Food<span class="red">Now</span></h1>
+          </a>
+        </div>
+        <div class="cart">
+          <button class="cartCheckoutButton" onclick="switchCartIsVisible()">
+            <span class="cartItemsQuantity"></span>
+            <img class="cartClick" src="/assets/cart.png" alt="cart icon" />
+          </button>
+          <div class="checkoutCart">
+            <div class="checkoutCartTitle">
+              <span>Cart</span>
+              <img onclick="closeCart()" src="/assets/icon-close.svg" alt="" />
+            </div>
+            <ul class="checkoutCartList">
+              <p class="emptyCart">Cart Is Empty</p>
+              <!-- cart content -->
+            </ul>
+            <a
+              
+              href="/checkout"
+              class="mainButton checkoutButton"
+              >Checkout</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="bg_parallax">
+        <img src="/assets/steakhousefront.jpg" class="restaurantBg"></img>
+        <h2 class="welcomeMessage">Welcome to Butchery Meat Shop</h2>
+      </div>
+      <div class="sectionsBg">
+        <section class="container subSections">
+          <h2>Our History</h2>
+          <div class="restaurantApresentation">
+            <div class="restaurantApresentationText">
+              <p>
+                In 1998, Thompson's Steakhouse was founded by John Thompson, a man
+                whose passion for quality meat was instilled in him from a young
+                age. As the son of a skilled butcher, John grew up surrounded by
+                the sights and smells of his father's shop, learning the art of
+                selecting and preparing the finest cuts. This early education
+                fueled his dream of creating a steakhouse where he could share his
+                love for exceptional meat with the community. With a vision to
+                offer an unparalleled dining experience, John opened Thompson's
+                Steakhouse, combining traditional butchery expertise with a
+                welcoming, elegant atmosphere.
+              </p>
+              <p>
+                Since its opening, Thompson's Steakhouse has become a cornerstone
+                of the local dining scene. John's unwavering commitment to quality
+                and his innovative approach to classic steakhouse cuisine quickly
+                garnered a devoted following. Each steak is meticulously sourced,
+                aged to perfection, and expertly grilled, reflecting John's
+                dedication to his craft. Over the years, the restaurant has
+                expanded its menu to include a variety of gourmet sides and a
+                curated wine list, enhancing the overall dining experience. Today,
+                Thompson's Steakhouse stands as a testament to John Thompson's
+                vision, offering a timeless celebration of fine dining and his
+                family's rich butcher heritage.
+              </p>
+            </div>
+            <img class="mainCourseImage" src="/assets/steakPlate.jpg" alt="main course steak" />
+          </div>
+        </section>
+        <section class="container subSections">
+          <h2>Restaurant Menu</h2>
+          <ul class="orderNowSectionList">
+          </ul>
+        </section>
+      </div>
+      
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

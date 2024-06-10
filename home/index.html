@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/header.css" />
+    <link rel="stylesheet" href="apresentationSection.css" />
+    <link rel="stylesheet" href="restaurantSection.css" />
+    <link rel="stylesheet" href="orderNowSection.css" />
+    <title>Food Now</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="headerSeparator container">
+        <div class="siteBrand">
+          <img src="/assets/logo.png" alt="" />
+          <a href="/home">
+            <h1>Food<span class="red">Now</span></h1>
+          </a>
+        </div>
+        <div class="cart">
+          <button class="cartCheckoutButton" onclick="switchCartIsVisible()">
+            <span class="cartItemsQuantity"></span>
+            <img class="cartClick" src="/assets/cart.png" alt="cart icon" />
+          </button>
+          <div class="checkoutCart">
+            <div class="checkoutCartTitle">
+              <span>Cart</span>
+              <img onclick="closeCart()" src="/assets/icon-close.svg" alt="" />
+            </div>
+            <ul class="checkoutCartList">
+              <p class="emptyCart">Cart Is Empty</p>
+              <!-- cart content -->
+            </ul>
+            <a href="/checkout" class="mainButton checkoutButton">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="apresentationSection">
+      <div class="container apresentationSection">
+        <div class="leftApresentationSection">
+          <h2 class="apresentationText">
+            We Provide
+            <span>Your Food within</span>
+            <span class="red">30 Min</span>
+          </h2>
+          <div>
+            <a href="#orderNow" class="mainButton">Order Now</a>
+            <a href="#restaurants" class="mainButton">See Restaurants</a>
+          </div>
+        </div>
+        <div class="rightApresentationSection">
+          <img src="/assets/steak.png" alt="" />
+        </div>
+      </div>
+      <div class="apresentationBenefits">
+        <ul class="apresentationBenefitsList">
+          <li class="apresentationBenefitsItem">
+            <img src="/assets/clock.png" alt="clock" />
+            <p>Delivery all place in less than 30 minutes</p>
+          </li>
+          <li class="apresentationBenefitsItem">
+            <img src="/assets/truck.png" alt="clock" />
+            <p>Fast and Free delivery from 60$</p>
+          </li>
+          <li class="apresentationBenefitsItem">
+            <img src="/assets/table_bell.png" alt="clock" />
+            <p>
+              When you call, <br />
+              we response with fresh products
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="subSections container" id="restaurants">
+      <div class="restaurantSectionHeader">
+        <h2>Restaurants</h2>
+      </div>
+      <div>
+        <ul class="restaurantSectionList">
+          <!-- JavaScript Content from Components.js  -->
+        </ul>
+      </div>
+    </section>
+    <section class="subSections mainFoodBg" id="orderNow">
+      <div class="container">
+        <div class="orderNowSectionHeader">
+          <h2>Order Now</h2>
+        </div>
+        <div>
+          <ul class="orderNowSectionList"></ul>
+        </div>
+      </div>
+    </section>
+    <script src="/main.js"></script>
+  </body>
+</html>

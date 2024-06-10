@@ -1,0 +1,42 @@
+.restaurantSectionHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurantSectionList {
+  padding: 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px
+}
+
+.restaurantSectionItem {
+  background-color: #141414;
+  display: flex;
+  width: 380px;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: 0.8s;
+  cursor: pointer;
+
+
+  .restaurantImage {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .restaurantLogo {
+    padding: 20px 40px ; 
+    width: 100%;
+  }
+
+  &:hover {
+    scale: 1.03;
+  }
+
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
