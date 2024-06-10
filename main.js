@@ -46,7 +46,7 @@ function addCartToMemory() {
 
 // function to remove errors in page where this functions is not are used
 function reloadInfo() {
-  if (page == '/checkout/') {
+  if (page == '/checkout') {
     reloadCheckoutItems()
     reloadCheckoutPrice()
     totalPriceItems()
@@ -312,7 +312,7 @@ function emptyCart() {
   newText.classList.add('emptyCart')
   newText.innerText = "Cart is empty"
 
-  if (page == '/checkout/') {
+  if (page == '/checkout') {
     checkoutPageCartList.appendChild(newText)
     } else {
     checkoutCartList.appendChild(newText)
@@ -350,7 +350,7 @@ function resturantsList () {
 
 function foodsList() {
   //used to remove error when javascript try construct this componentes in pages doens't use this
-  if (page != '/checkout/') {
+  if (page != '/checkout') {
     foods.map((food) => {
       let newFood = document.createElement('li')
       newFood.classList.add('orderNowSectionItem') 
@@ -368,7 +368,7 @@ function foodsList() {
               </div>
               <span>$${food.price.toFixed(2)}</span>
             </div>
-            <a onclick="addToCart(${food.id})" href="/checkout/" class="orderNowButton">Checkout</a>
+            <a onclick="addToCart(${food.id})" href="/checkout" class="orderNowButton">Checkout</a>
           </div>
           <button class="buyButton" onclick="addToCart(${food.id})">
             <img src="/assets/cart.png" alt="cart icon" />
